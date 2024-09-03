@@ -1,21 +1,510 @@
-  * 
-  { 
-      margin: 0; 
-      padding: 0;
- }
-body
- {
-      height: 100%;
-      background-color: #10578d;
-      text-align: center;
-      font: 1.2em Verdana, Arial, Helvetica, sans-serif;
+
+*{
+      padding:0;
+      margin:0;
+      box-sizing: border-box;
+}
+body{
+
+      position:relative;
+      color:white;
+      background-color: rgba(7, 4, 40);
+}
+.intro
+{
+      margin-left:100px;
+}
+nav
+{
+      width:100%;
+      height:100px;
+      background-color:rgb(119, 119, 119);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content:center;
+      padding:30px;
+      /* text-align: center; */
+      /* margin-top:50px; */
+      position:fixed;
+      z-index:100;
+      top:0;
+}
+  nav ul
+  {
+       margin-left:60%; 
+  }
+nav a
+{
+      text-decoration:none;
+      color:white;
+      
+}
+nav li
+{
+      list-style-type:none;
+      display: inline;
+      margin:15px;
+      font-size:20px;
+      padding:0 20px;
+      font-weight: bold;
+      transition: 0.5s;
 }
 
-img
+     
+
+nav a:hover
 {
-      width:30%;
+
+      border-bottom:1px solid white;
+      color:rgb(255, 183, 0);
+
+      transition: 0.5s;
 }
-video
+.text1
 {
-      width:40%;
+      background-color:rgb(119, 119, 119);
+      display: inline;
+      padding:20px 80px;
+      font-size:30px;
+      border-radius:50%;
+      margin-left:0%;
+      position:relative;
+      top:-30px;
+
+}
+.two
+{
+      width:700px;
+}
+.text2
+{
+      background-color:rgb(119, 119, 119);
+      display: inline;
+      padding:20px 80px;
+      font-size:30px;
+      border-radius:100%;
+      margin-right:1250px;
+      margin-bottom:70px;
+      margin-top:100px;
+     
+}
+.text3
+{
+
+      background-color:rgb(119, 119, 119);
+      display: inline;
+      padding:20px 80px;
+      font-size:30px;
+      border-radius:100%;
+      margin-right:1250px;
+      position:relative;
+      top:50px;
+}
+.text4
+{
+      background-color:rgb(119, 119, 119);
+      display: inline;
+      padding:20px 80px;
+      font-size:30px;
+      border-radius:100%;
+      right:650px;
+      position:relative;
+      top:40px;
+}
+.prime
+{
+      /* border:1px solid black; */
+      padding:30px;
+      display: flex;
+      flex-direction:row;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 100px;
+}
+
+.im1
+{
+      margin-top: 100px;
+      width:400px;
+      border-radius:12px;
+      box-shadow:0px 0px 10px rgb(0, 0, 0);
+      text-align: center;
+      margin-right:300px;
+
+}
+p{
+      font-size: 25px;
+      margin-bottom: 20px;
+}
+
+.pre,.edu
+{
+      font-weight: bold;
+      color:darkcyan;
+      margin-bottom:20px;
+      font-size:27px;
+}
+#bio
+{
+      background-color: rgba(7, 4, 40, 0.84);
+      width:100%;
+     
+}
+.education p 
+{
+      margin-bottom: 20px;
+}
+
+#skills
+{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width:100%;
+      text-align: center;
+      background-color: rgba(7, 4, 40, 0.84);
+     
+}
+
+
+.t1,.t2,.t3,.t4 
+{
+      font-size: 40px;
+      margin-bottom:40px;
+      margin-top:20px;
+      text-transform: uppercase;
+      color:rgba(228, 228, 228, 0.807);
+      box-shadow: 0px 0px 15px ;
+      
+}
+.comp1
+{
+    width: 80%;  
+}
+.para
+{
+      font-size:29px;
+}
+ol{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.comp1 ol li
+{
+      list-style: none;
+      font-size:30px;
+      color:rgb(137, 95, 234);
+      font-weight: bold;
+      margin-bottom:15px;
+      border-radius:6px;
+      margin-top: 50px;
+}
+
+#principale
+{
+      margin-top: 50px;
+      width:100%;
+}
+
+.can {
+       font-size:30px;
+       margin-top:20px;
+       margin-bottom:60px;
+}
+
+.pht
+{
+      width:60%;
+      margin-top: 50px;
+      animation:sorel 5s infinite ease-in;
+}
+
+.im{
+      animation: steve 5s infinite ease-in;
+}
+.intro p
+{
+      color:rgb(251, 178, 151);
+      font-weight:bold;
+      animation:sorel 5s infinite  ease-in;
+}
+@keyframes steve
+{
+      30%
+      {
+         transform:scale(0.9);
+         translate:  0px  20px;
+      }
+}
+@keyframes sorel
+{
+      30%
+      {
+            
+            scale:1.1;
+      
+      }
+}
+
+
+ol li img
+{
+      width:200px;
+      border-radius:16px;
+      margin:0px 20px;
+}
+.a,.b
+{
+      animation:anime 1s infinite;
+}
+.c,.d 
+{
+      animation:anime2 1s infinite;
+}
+.e{
+      animation:anime3 1s infinite;
+}
+@keyframes anime
+{
+      30%
+      {
+            translate: 0px 20px;
+      }
+}
+@keyframes anime2
+{
+      30%
+      {
+            translate: 0px  20px;
+      }
+}
+
+@keyframes anime3
+{
+      30%
+      {
+            transform: scale(1.1);
+      }
+}
+.im
+{
+      width: 350px;
+      height:370px;
+      background-color: burlywood;
+      border-radius:16px;
+      margin:30px;
+      box-shadow:0px 0px 3px black;
+}
+.vid{
+
+      width:350px;
+      height:370px;
+      margin:0 30px;
+}
+
+.vi{
+      height:500px;
+      margin-top:40px;
+      margin-bottom: 40px;
+}
+#experience
+{
+      text-align: center;
+      background-color: rgba(5, 4, 24, 0.84);
+      padding:50px;
+      margin-top:100px;
+     
+}
+
+
+#contact
+{
+      width:100%;
+      text-align: center;
+      /* margin-left: 35%; */
+      margin-bottom: 50px;
+     
+}
+
+form
+{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;align-items: center;
+      padding:20px;
+      background-color: rgba(31, 7, 61, 0.622);
+      border-radius: 20px;
+      
+}
+input
+{
+      display: block;
+      margin-bottom: 40px;
+      outline: 0;
+      font-size:30px;
+      padding:20px;
+}
+
+#name,#firstName,#email
+{
+      width:500px;
+      height:35px;
+      border-radius: 6px;
+      border:0;
+}
+label
+{      
+      font-weight:bold;
+      padding-bottom:30px;
+      font-size:25px;
+      color:rgb(255, 255, 255);
+}
+textarea
+{
+      width:500px;
+      height:100px;
+      margin-bottom:20px;
+      font-size: 25px;
+      border:0;
+      outline: 0;
+      padding:5px;
+}
+#sub
+{
+      padding:5px 40px;
+      margin-left: 350px;
+      border-radius: 8px;
+      border: 0;
+      cursor: pointer;
+}
+#sub:hover
+{
+      background-color: rgba(128, 255, 0, 0.899);
+}
+footer
+{
+      width:100%;
+      background-color:rgb(16, 14, 31);
+      height: 100px;
+      color:white;
+      text-align: center;
+      padding-top:10px;
+      
+}
+
+@media screen and ( max-width:1375px)
+
+  {   
+      *{
+            padding:0;
+            margin:0;
+      }
+
+      body{
+            width:100%;
+            overflow: scroll;
+            text-align: center;
+      }
+      nav ul
+      {
+           margin-left:0%; 
+      }
+      nav li
+      {
+            padding:0;
+      }
+      nav
+      {
+            margin-top: 0;
+      }
+      .prime
+      {
+            flex-direction: column;
+      }
+      
+      #bio
+      {
+            width:100%;
+            text-align: center;
+            overflow: hidden;
+
+      }
+     ol{
+            flex-direction:column;
+     }
+     .intro p 
+     {
+            font-size:19px;
+            width:100%;
+      
+     }
+     .intro
+     {
+            margin-left:0px;
+     }
+      .text1,.text2,.text3,.text4
+      {
+            position:static;
+            padding:0px;
+      }
+      .text1
+      {
+            padding:5px 30px ;
+            font-size:40px;
+            margin-top:0px;
+      }
+      .text4
+      {
+            padding:5px 30px;
+
+      }
+      #contact
+      {
+            padding:10px 0px;
+            margin-top:30px;
+
+      }
+      #contact p
+      {
+            margin-top:20px;
+      }
+      .text2
+      {
+            margin-right:0px;
+            font-size:35px;
+            padding:5px 40px;
+      }
+      #experience p
+      {
+            margin-top:30px;
+      }
+      .im1
+      {
+            margin-right: 0px;
+      }
+      #bio,#experience,#contact,#skills
+      {
+            overflow: hidden;
+      }
+      #contact
+      {
+            padding:10px;
+      }
+      
+}
+@media screen and (max-width:450px){
+     
+      .em{
+            font-size:20px;
+      }
+      .intro p
+      {
+            font-size:13px;
+            width:100%;
+      }
 }
